@@ -1,0 +1,13 @@
+public class ScManager : MonoBehaviour
+{
+   
+    public void GoGameScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void Close()
+    {
+        Application.Quit();
+    }
+    
+}
