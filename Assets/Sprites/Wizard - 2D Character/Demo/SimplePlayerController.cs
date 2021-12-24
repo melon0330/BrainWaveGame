@@ -13,15 +13,22 @@ namespace ClearSky
         private int direction = 1;
         bool isJumping = false;
         private bool alive = true;
+<<<<<<< HEAD
         public SpriteRenderer renderer;
+=======
+
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
 
         // Start is called before the first frame update
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
+<<<<<<< HEAD
             
             
+=======
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
         }
 
         private void Update()
@@ -36,6 +43,7 @@ namespace ClearSky
                 Run();
 
             }
+<<<<<<< HEAD
             
         }
         void FixedUpdate()
@@ -50,6 +58,8 @@ namespace ClearSky
                         anim.SetBool("isJump", false);
                 }
             }
+=======
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -68,8 +78,12 @@ namespace ClearSky
                 direction = -1;
                 moveVelocity = Vector3.left;
 
+<<<<<<< HEAD
                 transform.localScale = new Vector3(direction, 0.5f, 0.5f);
 
+=======
+                transform.localScale = new Vector3(direction, 1, 1);
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
                 if (!anim.GetBool("isJump"))
                     anim.SetBool("isRun", true);
 
@@ -79,8 +93,12 @@ namespace ClearSky
                 direction = 1;
                 moveVelocity = Vector3.right;
 
+<<<<<<< HEAD
                 transform.localScale = new Vector3(direction, 0.5f, 0.5f);
 
+=======
+                transform.localScale = new Vector3(direction, 1, 1);
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
                 if (!anim.GetBool("isJump"))
                     anim.SetBool("isRun", true);
 

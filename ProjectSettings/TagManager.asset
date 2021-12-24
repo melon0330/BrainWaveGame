@@ -3,8 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Border
+=======
+  tags: []
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,11 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - Flat
+=======
+  - 
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
   - 
   - 
   - 

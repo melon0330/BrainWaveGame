@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+<<<<<<< HEAD
     public float maxSpeed;
     Rigidbody2D rigid;
     public bool isTouchBottom;
@@ -62,5 +63,21 @@ public class PlayerMove : MonoBehaviour
 
             }
         }
+=======
+    Rigidbody2D rigid; //물리이동을 위한 변수 선언 
+
+    private void Awake() {
+        
+        rigid = GetComponent<Rigidbody2D>(); //변수 초기화 
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        float h = Input.GetAxisRaw("Horizontal");   
+        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+
+>>>>>>> 5abf8fa6c77ac1de9b9fff30e710b57de91c6756
     }
 }
